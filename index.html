@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>
+            UNIT CONVERTER
+        </h2>
+    </nav>
+
+    <div class="container">
+
+        <div class="boxes_2" id="box">
+            <select class="conversion" id="conv_1">
+                <option value="INCH" selected>INCH</option>
+                <option value="FOOT">FOOT</option>
+                <option value="METER">METER</option>
+                <option value="CENTIMETER">CENTIMETER</option>
+                <option value="MILIMETER">MILIMETER</option>
+            </select>
+            <div class="symbol" id="change" class="conversion"></div>
+            <select class="conversion" id="conv_2">
+                <option value="INCH">INCH</option>
+                <option value="FOOT" selected>FOOT</option>
+                <option value="METER">METER</option>
+                <option value="CENTIMETER">CENTIMETER</option>
+                <option value="MILIMETER">MILIMETER</option>
+            </select>
+        </div>
+        <div class="boxes_2" id="abc">
+            <input type="text" class="conversion" value="0" id="inp_1" onfocus="this.value = ''"></input>
+            <div class="symbol_2"></div>
+            <input type="text" class="conversion" value="0" id="inp_2"></input>
+        </div>
+        <div class="button" id = "btn" onclick="xyz()">
+            <h5>
+                CONVERT
+            </h5>
+        </div>
+    </div>
+    <script src="unit_conv.js"></script>
+</body>
+</html>
